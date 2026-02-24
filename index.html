@@ -63,6 +63,30 @@ footer {
     text-align:center;
     padding:15px;
 }
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+}
 </style>
 </head>
 
@@ -70,6 +94,7 @@ footer {
 
 <header>
 <h1>HƯỚNG DẪN CÔNG VIỆC</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </header>
 
 <div class="container">
