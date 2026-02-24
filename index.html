@@ -123,6 +123,20 @@ body {
     height: auto;
     border-radius: 8px;
 }
+/* ===== NÚT LÊN ĐẦU TRANG ===== */
+#topBtn {
+    display: none;        /* Ẩn khi chưa cuộn */
+    position: fixed;      /* Cố định góc màn hình */
+    bottom: 20px;         /* Cách đáy 20px */
+    right: 20px;          /* Cách phải 20px */
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;   /* Làm tròn */
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
 </style>
 </head>
 
@@ -212,6 +226,28 @@ Trân trọng từng khách một, kể cả khách sai hay đúng.<br>
 <footer>
 © 2026 Linhdanshop
 </footer>
+<!-- ===== NÚT LÊN ĐẦU TRANG ===== -->
+<button onclick="topFunction()" id="topBtn">↑</button>
+<!-- ===== SCRIPT NÚT LÊN ĐẦU TRANG ===== -->
+<script>
 
+// Lấy nút theo ID
+let mybutton = document.getElementById("topBtn");
+
+// Khi cuộn xuống 200px thì hiện nút
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+// Khi bấm nút sẽ cuộn lên đầu trang
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+</script>
 </body>
 </html>
