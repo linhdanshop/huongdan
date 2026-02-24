@@ -24,19 +24,24 @@ header {
 }
 
 .sidebar {
-    width:250px;
-    background:white;
-    padding:20px;
-    min-height:100vh;
-    border-right:1px solid #ddd;
+    width: 100%;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 .sidebar a {
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    color:#333;
-    border-radius:5px;
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    background: #f5f7fa;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.sidebar a:hover {
+    background: #e0ecff;
 }
 
 .sidebar a:hover {
@@ -49,7 +54,7 @@ header {
 }
 
 section {
-    margin-bottom:50px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -78,7 +83,10 @@ footer {
     }
 
     .content {
-        padding: 20px;
+        flex: 1;
+		padding: 20px;
+		max-width: 900px;
+		margin: auto;
     }
 
     img {
@@ -86,6 +94,10 @@ footer {
         height: auto;
     }
 
+}
+body {
+    margin:0;
+    font-family:Arial, sans-serif;
 }
 </style>
 </head>
